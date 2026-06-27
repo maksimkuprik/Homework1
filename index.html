@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Homework1</title>
 </head>
+
 <body>
-    
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать <br> на мой сайт мини-игр</h1>
+            <p>Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай «Поехали!» и приступай.</p>
+            <button class="btn-start">Поехали!</button>
+        </div>
+    </header>
+
+    <div class="ticker">
+        <div class="ticker-item">Викторина</div>
+        <div class="ticker-star">✦</div>
+        <div class="ticker-item">Угадай число</div>
+        <div class="ticker-star">✦</div>
+        <div class="ticker-item">Переверни текст</div>
+        <div class="ticker-star">✦</div>
+        <div class="ticker-item">Простая арифметика</div>
+        <div class="ticker-star">✦</div>
+        <div class="ticker-item">Камень, ножницы, бумага</div>
+        <div class="ticker-star">✦</div>
+        <div class="ticker-item">Генератор случайных цветов</div>
+        <div class="ticker-star">✦</div>
+    </div>
+
+    <main class="games-section">
+        <div class="container">
+            <h2>Об играх</h2>
+            <p class="section-desc">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них
+                может поиграть каждый. <br> Все игры доступны для пользования.</p>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="./img/Обложка карточки.jpg" alt="Угадай число" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №1</span>
+                        <h3>Угадай число</h3>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./img/Обложка карточки (1).jpg" alt="Простая арифметика" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №2</span>
+                        <h3>Простая арифметика</h3>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./img/Обложка карточки (2).jpg" alt="Переверни текст" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №3</span>
+                        <h3>Переверни текст</h3>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./img/Обложка карточки (3).jpg" alt="Камень, ножницы, бумага" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №4</span>
+                        <h3>Камень, ножницы, бумага</h3>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./img/Обложка карточки (4).jpg" alt="Простая викторина" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №5</span>
+                        <h3>Простая викторина</h3>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./img/Обложка карточки (5).jpg" alt="Генератор случайных цветов" class="card-image">
+                    <div class="card-info">
+                        <span class="game-number">Игра №6</span>
+                        <h3>Генератор случайных цветов</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
