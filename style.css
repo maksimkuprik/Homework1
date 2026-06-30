@@ -10,8 +10,7 @@ body {
     color: #ffffff;
 }
 
-.hero {
-    width: 1440px;             
+.hero {             
     height: 800px;             
     position: relative;
     top: -0px;                  
@@ -62,7 +61,7 @@ body {
     line-height: 32px;            
     letter-spacing: 0px;          
     vertical-align: middle;
-    color: #a1a1aa;              
+    color: #202027;            
     margin-bottom: 50px;          
 }
 
@@ -87,6 +86,7 @@ body {
     cursor: pointer;
     box-sizing: border-box;     
     transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 24px;
 }
 
 .btn-start:hover {
@@ -230,6 +230,7 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
 .card-image {
