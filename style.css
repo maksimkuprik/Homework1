@@ -6,7 +6,10 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    width: 1440;
+    top: -0px;
+    opacity: 1;
+    background-color: #202027;
     color: #ffffff;
 }
 
@@ -16,14 +19,114 @@ body {
     top: -0px;                  
     transform: rotate(0deg);    
     opacity: 1;                 
-    background-color: #a3e635;  
-    color: #1a1a1a;
+    background-color:#E1FF8F; 
+    color:  #202027;
     padding: 40px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+}
+
+.star svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.star-left-top {
+    width: 57;
+    height: 57;
+    top: 94px;
+    left: 63px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-left {
+    width: 35;
+    height: 35;
+    top: 69px;
+    left: 156px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-left-bottom {
+    width: 37;
+    height: 37;
+    top: 538px;
+    left: 948px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-right-small {
+    width: 83;
+    height: 83;
+    top: 568px;
+    left: 1013px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-right-giant {
+   height: 750px;
+   left: 1115px;
+   transform: rotate(-108.45 deg);
+   opacity: 1;
+   border-width: 1px;
+}
+
+.star-bottom {
+    width: 80;
+    height: 126;
+    top: 468px;
+    left: 1350px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-vector {
+    width: 317;
+    height: 163;
+    top: -10px;
+    left: 950px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-vector-2 {
+    width: 142;
+    height: 179;
+    top: 254px;
+    left: 1150px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.star-vector-3 {
+    width: 219.8815460205078;
+    height: 418;
+    top: 359px;
+    left: 1325px;
+    opacity: 1;
+    border-width: 1px;
 }
 
 .hero-content {
@@ -49,7 +152,8 @@ body {
     letter-spacing: 0px;                  
     vertical-align: middle;      
     display: inline-block;      
-    margin-bottom: 20px;        
+    margin-bottom: 20px;
+    color: #202027;        
 }
 
 
@@ -81,7 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;                 
-    background-color: #1c1c1e; 
+    background-color:#202027;
     color: #ffffff;           
     cursor: pointer;
     box-sizing: border-box;     
@@ -91,14 +195,13 @@ body {
 
 .btn-start:hover {
     background-color: #ffffff;  
-    color: #1c1c1e;             
+    color:#202027;
     border-color: #ffffff;       
     transform: scale(1.02); 
 }
 
 .ticker {
-    position: absolute;                
-    width: 3219.99px;                
+    position: absolute;                                
     height: 90px;                       
     top: 710px;                      
     left: -30px;                        
@@ -112,7 +215,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #d9f99d;
+    background-color: #BCEC30;
     color: #1a1a1a;
     box-sizing: border-box;
     animation: ticker-move 25s linear infinite;
@@ -142,20 +245,18 @@ body {
 }
 
 .games-section {
-    position: absolute;         
-    width: 1440px;              
-    height: 1470px;            
+    position: absolute;                       
+    height: 1470px;           
     top: 800px;                 
     left: 0;
     transform: rotate(0deg);    
     opacity: 1;                 
-    background-color: #1a1a1a;  
+    background: #202027;
     box-sizing: border-box;
 }
 
 .container {
-    position: absolute;        
-    width: 1201px;              
+    position: relative;                      
     height: 1326px;            
     top: 94px;                  
     left: 119px;                
@@ -166,6 +267,36 @@ body {
     justify-content: flex-start;
     gap: 72px;                  
     box-sizing: border-box;
+}
+
+.games-left {
+    width: 31.339238597680133;
+    height: 31.339238597680133;
+    top: 700px;
+    left: -100px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.games-top {
+    width: 54.59828476423661;
+    height: 54.59828476423661;
+    top: 762px;
+    left: -75px;
+    transform: rotate(-5.45 deg);
+    opacity: 1;
+    border-width: 1px;
+}
+
+.games-bottom {
+    width: 584.7165528971053;
+    height: 584.7165528971053;
+    top: 77px;
+    left: 933px;
+    transform: rotate(6.77 deg);
+    opacity: 1;
+    border-width: 1px;
+    z-index: -1;
 }
 
 .games-section h2 {
@@ -296,6 +427,6 @@ body {
     vertical-align: middle;
     display: flex;               
     align-items: center;          
-    color: #1a1a1a;    
+    color:#202027;
     margin: 0; 
 }
