@@ -5,6 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 body {
     width: 1440;
     top: -0px;
@@ -258,8 +263,7 @@ body {
 .container {
     position: relative;                      
     height: 1326px;            
-    top: 94px;                  
-    left: 119px;                
+    top: 94px;                               
     transform: rotate(0deg);   
     opacity: 1;                 
     display: flex;
