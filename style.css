@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -308,6 +312,12 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 5;
+}
+
+.about-card {
+    text-decoration: none;
+    color: inherit;      
+    display: block;   
 }
 
 .about-card-image {
