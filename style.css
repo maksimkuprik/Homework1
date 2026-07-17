@@ -6,7 +6,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .center {
@@ -316,8 +316,8 @@ body {
 
 .about-card {
     text-decoration: none;
-    color: inherit;      
-    display: block;   
+    color: inherit;
+    display: block;
 }
 
 .about-card-image {
@@ -476,7 +476,6 @@ body {
     }
 
     .hero-content {
-        padding-left: 17px;
         max-width: 343px;
         width: 100%;
         text-align: center;
@@ -505,13 +504,19 @@ body {
 
 
     .btn-start {
-        width: 100%;
-        height: 66px;
-        font-size: 16px;
+        width: 285px;
+        height: 55px;
+        opacity: 1;
+        gap: 10px;
         border-radius: 60px;
+        border: 1px solid currentColor;
+        padding: 16px 28px;
+        transform: rotate(0deg);
+        box-sizing: border-box;
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        font-size: 16px;
     }
 
     .hero-bg {
@@ -569,7 +574,8 @@ body {
     .star-bottom,
     .star-vector,
     .star-vector-2,
-    .star-vector-3 {
+    .star-vector-3,
+    .star games-left-right {
         display: none !important;
     }
 
@@ -655,7 +661,6 @@ body {
     .h-card-info,
     .h-card-image {
         width: 100%;
-        flex: none;
     }
 
     .h-card-image {
@@ -683,15 +688,14 @@ body {
         color: #202027;
         font-size: 32px;
         font-weight: 700;
-        margin-bottom: 8px;
     }
 
     .h-game-desc {
         color: #202027;
         font-size: 16px;
         line-height: 1.5;
-        margin-bottom: 16px;
         max-width: 100%;
+        margin: 0;
     }
 
     .h-btn-play {
