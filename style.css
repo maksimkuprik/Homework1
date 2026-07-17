@@ -430,20 +430,22 @@ body {
 }
 
 .h-btn-play {
-    width: 247;
-    height: 66;
+    width: 247px;
+    height: 66px; 
     opacity: 1;
     gap: 10px;
-    padding-top: 16px;
-    padding-right: 28px;
-    padding-bottom: 16px;
-    padding-left: 28px;
     border-radius: 60px;
+    padding: 16px 28px; 
+    transform: rotate(0deg); 
+    box-sizing: border-box; 
     background: #202027;
     color: #ffffff;
-
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    cursor: pointer;
 }
-
 
 .footer {
     background-color: #E1FF8F;
