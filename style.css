@@ -312,6 +312,11 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 5;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.about-card:hover {
+    transform: scale(1.05); 
 }
 
 .about-card {
@@ -700,20 +705,23 @@ body {
         margin: 0;
     }
 
-    .h-btn-play {
-        align-self: stretch;
-        text-align: center;
-        background-color: #202027;
-        color: #FFFFFF;
-        width: 285;
-        height: 55;
-        border-width: 1px;
-        opacity: 1;
-        gap: 10px;
-        padding-top: 16px;
-        padding-right: 28px;
-        padding-bottom: 16px;
-        padding-left: 28px;
-        border-radius: 60px;
-    }
+   .h-btn-play {
+    display: inline-flex !important; 
+    flex-shrink: 0;
+    align-self: center; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #202027;
+    color: #FFFFFF;
+    width: 285px !important; 
+    height: 55px !important; 
+    box-sizing: border-box; 
+    border: 1px solid currentColor;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 60px;
+    padding: 16px 28px; 
+}
+
 }
