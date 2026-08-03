@@ -180,6 +180,7 @@ body {
     color: #202027;
     border-color: #ffffff;
     transform: scale(1.03);
+      border: 1px solid #202027 !important; 
 }
 
 .ticker {
@@ -450,7 +451,16 @@ body {
     align-items: center;
     text-decoration: none; 
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+.h-btn-play:hover {
+    background-color: #FFFFFF !important; 
+    color: #202027 !important;            
+    border-color: #202027;
+      border: 1px solid #202027 !important;                 
+}
+
 
 .footer {
     background-color: #E1FF8F;
