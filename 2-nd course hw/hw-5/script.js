@@ -1,5 +1,5 @@
 {
-    const arr =;
+    const arr = Array.of(1, 5, 4, 10, 0, 3);
 
     console.log('--- Задание 1 ---');
     for (let i = 0; i < arr.length; i++) {
@@ -11,7 +11,7 @@
 }
 
 {
-    const arr =;
+    const arr = Array.of(1, 5, 4, 10, 0, 3);
     let index = arr.indexOf(4);
 
     console.log('--- Задание 2 ---');
@@ -19,7 +19,7 @@
 }
 
 {
-    const arr =;
+    const arr = Array.of(1, 3, 5, 10, 20);
     let result = arr.join(' ');
 
     console.log('--- Задание 3 ---');
@@ -42,7 +42,7 @@
 }
 
 {
-    const arr =;
+    const arr = Array.of(1, 1, 1);
     arr.push(2, 2, 2);
 
     console.log('--- Задание 5 ---');
@@ -50,7 +50,12 @@
 }
 
 {
-    const arr = [9, 8, 7, 'a', 6, 5];
+    const arr = "9,8,7,a,6,5".split(",");
+   
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 'a') arr[i] = Number(arr[i]);
+    }
+
     arr.sort(); 
     const result = arr.filter(item => item !== 'a');
 
@@ -59,8 +64,8 @@
 }
 
 {
-    const arr =;
-    let userInput = prompt('Задание 7: Угадайте число от 1 до 10:');
+    const arr = Array.of(9, 8, 7, 6, 5);
+    let userInput = prompt('Задание 7: Угадайте число из массива (от 5 до 9):');
     let userNumber = Number(userInput);
 
     if (arr.includes(userNumber)) {
@@ -79,7 +84,10 @@
 }
 
 {
-    const arr = [[1, 2, 3], [4, 5, 6]];
+    const sub1 = Array.of(1, 2, 3);
+    const sub2 = Array.of(4, 5, 6);
+    const arr = Array.of(sub1, sub2);
+    
     const result = [].concat(...arr);
 
     console.log('--- Задание 9 ---');
@@ -87,7 +95,7 @@
 }
 
 {
-    const arr =;
+    const arr = Array.of(3, 5, 8, 2, 9, 4);
 
     console.log('--- Задание 10 ---');
     for (let i = 0; i < arr.length - 1; i++) {
@@ -104,7 +112,7 @@
     }
 
     console.log('--- Задание 11 ---');
-    const initialArray =;
+    const initialArray = Array.of(1, 2, 3, 4, 5);
     console.log('Массив квадратов:', getSquaresArray(initialArray));
 }
 
@@ -124,7 +132,7 @@
     }
 
     console.log('--- Задание 13 ---');
-    const mixedArray = [4, -3, 0, 8, -12, -1, 5, -9];
+    const mixedArray = Array.of(4, -3, 0, 8, -12, -1, 5, -9);
     console.log('Только отрицательные числа:', getNegativeNumbers(mixedArray));
 }
 
