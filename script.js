@@ -78,3 +78,98 @@ function startRockPaperScissors() {
 
     alert(resultMessage);
 }
+
+
+function startGuessNumber() {
+
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+    let guess = null;
+
+    while (guess !== secretNumber) {
+        let userInput = prompt("Компьютер загадал число от 1 до 100.\nПопробуйте угадать:");
+
+        if (userInput === null) {
+            alert("Игра прервана.");
+            return;
+        }
+
+        guess = Number(userInput);
+        attempts++;
+
+        if (isNaN(guess) || userInput.trim() === "") {
+            alert("Пожалуйста, введите корректное число.");
+            continue;
+        }
+
+        if (guess < secretNumber) {
+            alert("Загаданное число больше.");
+        } else if (guess > secretNumber) {
+            alert("Загаданное число меньше.");
+        } else {
+            alert(`🎉 Поздравляем! Вы угадали число ${secretNumber}!\nКоличество попыток: ${attempts}`);
+        }
+    }
+}
+
+
+function startArithmetic() {
+
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    
+    const operations = ["+", "-", "*", "/"];
+    const randomOp = operations[Math.floor(Math.random() * operations.length)];
+    
+    let correctAnswer;
+    let taskText = `${num1} ${randomOp} ${num2}`;
+
+    switch (randomOp) {
+        case "+":
+            correctAnswer = num1 + num2;
+            break;
+        case "-":
+            correctAnswer = num1 - num2;
+            break;
+        case "*":
+            correctAnswer = num1 * num2;
+            break;
+        case "/":
+        
+            correctAnswer = Number((num1 / num2).toFixed(2));
+            taskText += " (округлите до 2 знаков после запятой, если получается дробь)";
+            break;
+    }
+
+    const userInput = prompt(`Решите задачу:\n${taskText}`);
+
+    if (userInput === null) {
+        alert("Игра прервана.");
+        return;
+    }
+
+    if (Number(userInput) === correctAnswer) {
+        alert("📊 Верно! Отличная работа!");
+    } else {
+        alert(`❌ Ошибка. Правильный ответ был: ${correctAnswer}`);
+    }
+}
+
+
+function startReverseText() {
+    const userInput = prompt("Введите любой текст, который хотите перевернуть:");
+
+    // Проверяем «Отмену» или пустую строку
+    if (userInput === null) {
+        alert("Игра прервана.");
+        return;
+    }
+    if (userInput.trim() === "") {
+        alert("Вы ничего не ввели!");
+        return;
+    }
+
+    const reversedText = userInput.split("").reverse().join("");
+
+    alert(`Оригинальный текст:\n${userInput}\n\nПеревернутый текст:\n${reversedText}`);
+}
