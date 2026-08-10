@@ -40,3 +40,41 @@ function startQuiz() {
 
     alert(`Викторина окончена!\nВаш результат: ${correctCount} из ${quiz.length} правильных ответов.`);
 }
+
+function startRockPaperScissors() {
+
+    let userChoice = prompt('Введите ваш выбор: "камень", "ножницы" или "бумага"');
+
+    if (userChoice === null) {
+        alert("Игра прервана.");
+        return;
+    }
+
+    userChoice = userChoice.trim().toLowerCase();
+
+    if (userChoice !== "камень" && userChoice !== "ножницы" && userChoice !== "бумага") {
+        alert("Вы ввели неправильное значение. Пожалуйста, напишите: камень, ножницы или бумага.");
+        return;
+    }
+
+    const options = "камень,ножницы,бумага".split(",");
+
+    const randomIndex = Math.floor(Math.random() * 3);
+    const computerChoice = options[randomIndex];
+
+    let resultMessage = `Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n\n`;
+
+    if (userChoice === computerChoice) {
+        resultMessage += "Результат: Ничья! 🤝";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        resultMessage += "Результат: Вы победили! 🎉";
+    } else {
+        resultMessage += "Результат: Вы проиграли. 🤖";
+    }
+
+    alert(resultMessage);
+}
