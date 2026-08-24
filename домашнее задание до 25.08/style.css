@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #202027;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.task-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task-title {
+    font-size: 14px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.h-btn-play {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202027;
+    color: #FFFFFF;
+    width: 180px;
+    height: 45px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.h-btn-play:hover {
+    background-color: #FFFFFF;
+    color: #202027;
+}
+
+p, h1 {
+    margin-bottom: 15px;
+}

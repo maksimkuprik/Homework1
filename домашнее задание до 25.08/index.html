@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="task-box">
+        <div class="task-title">Задание 1: Скрытие и показ текста</div>
+        <h1 id="main-title">Добро пожаловать в мир mini-игр!</h1>
+        <button id="toggle-btn" class="h-btn-play">Скрыть</button>
+    </div>
+
+    <div class="task-box">
+        <div class="task-title">Задание 2: Изменение стиля элемента</div>
+        <p id="text-paragraph">Этот текст поменяет свой цвет при нажатии на кнопку.</p>
+        <button id="color-btn" class="h-btn-play">Изменить цвет</button>
+    </div>
+
+    <div class="task-box">
+        <div class="task-title">Задание 3: Динамическое изменение текста</div>
+        <h1 id="dynamic-title">Старый заголовок</h1>
+        <button id="change-text-btn" class="h-btn-play">Изменить текст</button>
+    </div>
+
+    <div class="task-box">
+        <div class="task-title">Задания 4 и 5: querySelectorAll и Классы</div>
+        <p class="description">Этот текст изменится (Класс: description).</p>
+        <p class="text-info">Этот текст останется прежним (Класс: text-info).</p>
+        <p class="description">И этот текст тоже изменится (Класс: description).</p>
+        <p class="text-hint">Этот текст скрипт не тронет (Класс: text-hint).</p>
+    </div>
+
+    <div class="task-box">
+        <div class="task-title">Задание 6: Добавление нового элемента в DOM</div>
+        <button id="add-elem-btn" class="h-btn-play">Добавить элемент</button>
+        <div id="elements-container" style="margin-top: 15px;"></div>
+    </div>
+
+    <div class="task-box">
+        <div class="task-title">Задание 7: Удаление элемента</div>
+        <button id="remove-elem-btn" class="h-btn-play">Удалить элемент</button>
+        <div style="margin-top: 15px;">
+            <p class="description-remove">Абзац для удаления №1</p>
+            <p class="description-remove">Абзац для удаления №2</p>
+            <p class="description-remove">Абзац для удаления №3</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
