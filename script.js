@@ -173,3 +173,16 @@ function startReverseText() {
 
     alert(`Оригинальный текст:\n${userInput}\n\nПеревернутый текст:\n${reversedText}`);
 }
+
+function startColorGenerator() {
+
+    const hexSymbols = "0123456789ABCDEF".split("");
+    let randomColor = "#";
+
+    for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * hexSymbols.length);
+        randomColor += hexSymbols[randomIndex];
+    }
+
+    document.body.style.backgroundColor = randomColor;
+}

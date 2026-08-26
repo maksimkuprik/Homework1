@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    transition: background-color 0.5s ease; 
 }
 
 .container {
