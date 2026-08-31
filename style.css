@@ -14,10 +14,6 @@ html {
     padding-right: calc(50% - 600px);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 html,
 body {
     min-height: 100vh;
@@ -37,15 +33,17 @@ body {
     margin: 0 auto;
     position: relative;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hero {
-    min-height: 800px;
+    height: 710px; 
     position: relative;
     background-color: #E1FF8F;
     color: #202027;
     display: flex;
-    align-items: center;
+    align-items: flex-start; 
     overflow: hidden;
 }
 
@@ -53,7 +51,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
     height: 100%;
     pointer-events: none;
     z-index: 1;
@@ -98,7 +96,12 @@ body {
 }
 
 .star-right-giant {
-    left: 1115px;
+    position: absolute;
+    width: 325px;     
+    height: 325px;      
+    top: 0;            
+    right: -10px;           
+    left: auto;         
     z-index: 5;
 }
 
@@ -112,24 +115,27 @@ body {
 .star-vector {
     width: 317px;
     height: 163px;
-    top: -10px;
-    left: 950px;
+    top: -30px;
+    right: 173px; 
+    left: auto;
     z-index: 2;
 }
 
 .star-vector-2 {
     width: 142px;
     height: 179px;
-    top: 254px;
-    left: 1150px;
+    top: 140px;
+    right: 148px; 
+    left: auto;
     z-index: 3;
 }
 
 .star-vector-3 {
     width: 220px;
     height: 418px;
-    top: 359px;
-    left: 1325px;
+    top: 240px;
+    right: -10px; 
+    left: auto;
     z-index: 4;
 }
 
@@ -139,8 +145,8 @@ body {
     max-width: 769px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-left: 0;
+    gap: 24px;
+    padding-top: 196px; 
     text-align: left;
     align-items: flex-start;
 }
@@ -148,7 +154,7 @@ body {
 .hero h1 {
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
+    line-height: 1.2;
     color: #202027;
 }
 
@@ -160,6 +166,7 @@ body {
 }
 
 .btn-start {
+    margin-top: 20px;
     width: 247px;
     height: 66px;
     border: 1px solid #1c1c1e;
@@ -195,6 +202,7 @@ body {
     white-space: nowrap;
     border-top: 1px solid #202027;
     border-bottom: 1px solid #202027;
+    z-index: 20; 
 }
 
 .ticker-wrapper {
@@ -228,11 +236,13 @@ body {
     color: #202027;
 }
 
+
 .about-section {
     position: relative;
     background-color: #202027;
     color: #202027;
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .about-section h2 {
@@ -362,7 +372,6 @@ body {
 }
 
 .games-list-section h2 {
-    margin-top: 96px;
     margin-bottom: 72px;
     font-size: 64px;
     font-weight: 700;
@@ -415,8 +424,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 24px;
-    column-gap: 48px;
+    gap: 36px;
+    width: 550px; 
     margin-left: 48px;
     margin-top: 48px;
 }
@@ -425,25 +434,29 @@ body {
     color: #202027;
     font-size: 48px;
     font-weight: 700;
+    line-height: 110%;
+    margin: 0;
+    white-space: normal; 
+    word-break: keep-all; 
+    white-space: normal !important; 
 }
 
 .h-game-desc {
     color: #202027;
     font-size: 24px;
     line-height: 32px;
-    margin: 15px 0 25px 0;
-    width: 457;
-    height: 64;
+    margin: 0;
+    width: 100%; 
+    max-width: 500px; 
+    height: 64px; 
 }
 
 .h-btn-play {
     width: 247px;
     height: 66px;
     opacity: 1;
-    gap: 10px;
     border-radius: 60px;
     padding: 16px 28px;
-    transform: rotate(0deg);
     box-sizing: border-box;
     background: #202027;
     color: #ffffff;
@@ -452,27 +465,28 @@ body {
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    font-size: 24px; 
+    font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .h-btn-play:hover {
     background-color: #FFFFFF !important;
     color: #202027 !important;
-    border-color: #202027;
     border: 1px solid #202027 !important;
 }
 
 
 .footer {
     background-color: #E1FF8F;
-    padding: 30px 20px;
+    padding: 61px 60px;
     text-align: center;
     margin-top: 144px;
 }
 
 .footer p {
     color: #202027;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -482,11 +496,13 @@ body {
         display: none;
     }
 
-    .hero {
+   .hero {
+        height: auto !important; 
         min-height: 640px;
         padding: 60px 0;
         margin: 0;
         display: flex;
+ 
         align-items: center;
         justify-content: center;
         position: relative;
@@ -501,6 +517,8 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 36px;
+        margin: 0 auto !important;
+        padding-top: 0 !important; 
     }
 
     .hero h1 {
@@ -684,7 +702,7 @@ body {
     .h-card-image {
         height: 350px;
         object-fit: cover;
-        width: 343;
+        width: 343px;
         opacity: 1;
         border-radius: 30px;
 
@@ -733,6 +751,31 @@ body {
         gap: 10px;
         border-radius: 60px;
         padding: 16px 28px;
+        font-size: 16px;
+    }
+
+    .footer {
+        width: 100% !important;        
+        max-width: 375px !important;  
+        height: 100px !important;      
+        margin-left: auto !important;
+        margin-right: auto !important;
+        background-color: #E1FF8F;
+        margin-top: 48px !important; 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 20px !important;
+    }
+
+    .footer p {
+        font-weight: 600; 
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #202027;
+        margin: 0 !important; 
     }
 
 }
